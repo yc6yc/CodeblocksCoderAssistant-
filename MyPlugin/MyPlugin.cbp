@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MyPlugin" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="MyPlugin" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs/default" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option host_application="$(#cb)/devel31/codeblocks.exe" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#wx31.include)" />
+					<Add directory="$(#wx31.lib)/gcc_dll/mswu" />
+					<Add directory="../../codeblocks-code-r13629-trunk/codeblocks-code-r13629-trunk/src/include" />
+					<Add directory="../../codeblocks-code-r13629-trunk/codeblocks-code-r13629-trunk/src/include/tinyxml" />
+					<Add directory="../../codeblocks-code-r13629-trunk/codeblocks-code-r13629-trunk/src/sdk/wxscintilla/include" />
+					<Add directory="E:/MSYS2/mingw64/include" />
+				</Compiler>
+				<Linker>
+					<Add option='-L&quot;E:\codeblocks-code-r13629-trunk\codeblocks-code-r13629-trunk\src\output31_64&quot;' />
+					<Add library="wxmsw31u" />
+					<Add library="codeblocks" />
+					<Add library="E:/MSYS2/mingw64/lib/libcurl.dll.a" />
+					<Add library="E:/MSYS2/mingw64/lib/libcurl.a" />
+					<Add directory="$(#wx31.lib)/gcc_dll" />
+					<Add directory="$(#cb)/devel31" />
+					<Add directory="E:/MSYS2/mingw64/lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="zip -j9 MyPlugin.zip manifest.xml" />
+					<Add after="zip -j9 MyPlugin.cbplugin MyPlugin.dll MyPlugin.zip" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="to_codeblocks_wx28">
+				<Option output="$(#cb)/devel/share/codeblocks/plugins/MyPlugin" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs/to_codeblocks_wx28" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters="--debug-log --multiple-instance --no-splash-screen --verbose -p debug --no-dde --no-check-associations " />
+				<Option host_application="$(#cb)/devel/codeblocks.exe" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#wx.include)" />
+					<Add directory="$(#wx.lib)/gcc_dll/mswu" />
+				</Compiler>
+				<Linker>
+					<Add library="wxmsw28u" />
+					<Add library="codeblocks" />
+					<Add directory="$(#wx.lib)/gcc_dll" />
+					<Add directory="$(#cb)/devel" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="zip -j9 $(#cb)\devel/share/codeblocks/MyPlugin.zip manifest.xml" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="to_codeblocks_wx30">
+				<Option output="$(#cb)/devel30/share/codeblocks/plugins/MyPlugin" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs/to_codeblocks_wx30" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters="--debug-log --multiple-instance --no-splash-screen --verbose -p debug --no-dde --no-check-associations " />
+				<Option host_application="$(#cb)/devel30/codeblocks.exe" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#wx30.include)" />
+					<Add directory="$(#wx30.lib)/gcc_dll/mswu" />
+				</Compiler>
+				<Linker>
+					<Add library="wxmsw30u" />
+					<Add library="codeblocks" />
+					<Add directory="$(#wx30.lib)/gcc_dll" />
+					<Add directory="$(#cb)/devel30" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="zip -j9 $(#cb)\devel30/share/codeblocks/MyPlugin.zip manifest.xml" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="to_codeblocks_wx31">
+				<Option output="$(#cb)/devel31/share/codeblocks/plugins/MyPlugin" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs/to_codeblocks_wx31" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters="--debug-log --multiple-instance --no-splash-screen --verbose -p debug --no-dde --no-check-associations " />
+				<Option host_application="$(#cb)/devel31/codeblocks.exe" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#wx31.include)" />
+					<Add directory="$(#wx31.lib)/gcc_dll/mswu" />
+				</Compiler>
+				<Linker>
+					<Add library="wxmsw31u" />
+					<Add library="codeblocks" />
+					<Add directory="$(#wx31.lib)/gcc_dll" />
+					<Add directory="$(#cb)/devel31" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="zip -j9 $(#cb)\devel31/share/codeblocks/MyPlugin.zip manifest.xml" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="to_codeblocks_wx32">
+				<Option output="$(#cb)/devel32/share/codeblocks/plugins/MyPlugin" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs/to_codeblocks_wx32" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters="--debug-log --multiple-instance --no-splash-screen --verbose -p debug --no-dde --no-check-associations " />
+				<Option host_application="$(#cb)/devel32/codeblocks.exe" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#wx32.include)" />
+					<Add directory="$(#wx32.lib)/gcc_dll/mswu" />
+				</Compiler>
+				<Linker>
+					<Add library="wxmsw32u" />
+					<Add library="codeblocks" />
+					<Add directory="$(#wx32.lib)/gcc_dll" />
+					<Add directory="$(#cb)/devel32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="zip -j9 $(#cb)\devel32/share/codeblocks/MyPlugin.zip manifest.xml" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="to_codeblocks_wx33">
+				<Option output="$(#cb)/devel33/share/codeblocks/plugins/MyPlugin" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs/to_codeblocks_wx33" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters="--debug-log --multiple-instance --no-splash-screen --verbose -p debug --no-dde --no-check-associations " />
+				<Option host_application="$(#cb)/devel33/codeblocks.exe" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#wx33.include)" />
+					<Add directory="$(#wx33.lib)/gcc_dll/mswu" />
+				</Compiler>
+				<Linker>
+					<Add library="wxmsw33u" />
+					<Add library="codeblocks" />
+					<Add directory="$(#wx33.lib)/gcc_dll" />
+					<Add directory="$(#cb)/devel33" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="zip -j9 $(#cb)\devel33/share/codeblocks/MyPlugin.zip manifest.xml" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="default;to_codeblocks_wx28;to_codeblocks_wx30;to_codeblocks_wx31;to_codeblocks_wx32;to_codeblocks_wx33;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-DBUILDING_PLUGIN" />
+			<Add option="-DHAVE_W32API_H" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DcbDEBUG" />
+			<Add option="-DCB_PRECOMP" />
+			<Add option="-DWX_PRECOMP" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-fmessage-length=0" />
+			<Add option="-fexceptions" />
+			<Add option="-Winvalid-pch" />
+			<Add option="-std=gnu++11" />
+			<Add directory="$(#cb)/include" />
+			<Add directory="$(#cb)/sdk/wxscintilla/include" />
+			<Add directory="$(#cb)/include/tinyxml" />
+		</Compiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="ClaudModel.cpp" />
+		<Unit filename="ClaudModel.h" />
+		<Unit filename="MyPlugin.cpp" />
+		<Unit filename="MyPlugin.h" />
+		<Unit filename="manifest.xml" />
+		<Unit filename="model.cpp" />
+		<Unit filename="model.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
