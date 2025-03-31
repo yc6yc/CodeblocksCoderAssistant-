@@ -1,6 +1,10 @@
 # CodeblocksCoderAssistant-
 This is the first C++ course practice project completed by four code novices with the help of AI, the project aims to make codeblocks, an IDE, can also be revitalized in the AI era, the project code is still in iteration, I hope you will support it.This plugin provides AI conversation functionality for the Code::Blocks Integrated Development Environment (IDE). Developers can interact with the AI system to quickly receive programming assistance, problem-solving, and code optimization suggestions. The plugin connects to an AI interface to provide real-time intelligent answers.
+
+
 Code::Blocks AI 对话插件
+
+
 概述
 本插件为Code::Blocks集成开发环境（IDE）提供了AI对话功能，开发者可以通过与智能对话系统交互，快速获得编程帮助、问题解答及代码优化建议。插件通过与AI接口的连接，能够为开发者提供智能问答支持。
 
